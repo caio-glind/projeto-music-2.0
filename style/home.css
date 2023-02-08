@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+span {
+    color: #DDAC2E;
+}
+
+a {
+    color: #DDAC2E;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#logo img {
+    width: 12ch;
+    padding: 15px;
+}
+
+#header {
+    position: absolute;
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    width: 100%;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+
+}
+
+#btn-mobile {
+    display: none;
+}
+
+/*------------------banner-----------------------*/
+.banner {
+    width: 100%;
+    height: 50ch;
+    background: #f15;
+}
+
+.banner img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.frase {
+    position: absolute;
+}
+
+/*----quem somos----- */
+.sobre {
+
+    width: 100%;
+    height: 50ch;
+    background: #000000;
+}
+
+.sobre h1 {
+
+    color: #FFF;
+    font-size: 5ch;
+    font-weight: 200;
+    text-align: center;
+}
+
+.texto-img {
+
+    display: flex;
+    width: 100%;
+    height: 40ch;
+
+}
+
+.texto-img p {
+    margin-left: 2ch;
+    margin-right: 2ch;
+    width: 60%;
+    text-align: center;
+    color: #FFF;
+}
+
+.texto-img img {
+    margin-right: 2ch;
+    width: 40%;
+    border-radius: 10px;
+
+}
+
+/*-------discografia do acervo*/
+.discografia {
+    width: 100%;
+    height: 70ch;
+    background: rgba(0, 0, 0, 0.959);
+
+}
+
+.discografia h1 {
+
+    color: #FFF;
+    font-size: 5ch;
+    font-weight: 200;
+    text-align: center;
+}
+
+.grup {
+    position: relative;
+    display: flex;
+    /*background: #FFF;*/
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+    height: 40ch;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*-----carde de cantor-----*/
+.card {
+    position: relative;
+    margin: 0.5ch;
+    width: 28ch;
+    height: 28ch;
+    background: #464543;
+
+
+}
+
+.card img {
+    top: -0ch;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*border-radius: 20px;*/
+    transition: 0.5s;
+    z-index: 2;
+
+}
+
+.card img:hover {
+    z-index: 1;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.card h1 {
+    color: #fff;
+    position: relative;
+    top: 3ch;
+    text-align: center;
+    z-index: 1;
+}
+
+/*----RODO PE------*/
+.rodaPe {
+    width: 100%;
+    height: 25ch;
+    color: #FFF;
+    background: #05111F;
+    /* display:-webkit-box;*/
+}
+
+.icone {
+    display: flex;
+    padding: 1% 45%;
+
+}
+
+.icone img {
+    position: relative;
+    width: 3ch;
+    top: 5ch;
+    margin-left: 1ch;
+    cursor: pointer;
+    
+
+
+}
+.texo{
+    position: relative;
+    width: 30ch;
+    top: 4ch;
+    margin-left: 1ch;
+    text-align: center;
+    cursor: pointer; 
+    left:38%;
+}
+.texo p{
+   
+    font-size: 15px;
+    font-weight: 300;
+}
+
+@media (max-width:1080px) {
+    .discografia {
+        height: 125ch;
+    }
+
+    .grup {
+        position: relative;
+        display: flex;
+        /* background: #FFF; */
+        position: relative;
+        margin-left: 5%;
+        width: 90%;
+        height: 40ch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:1115px) {
+  
+    .discografia {
+        width: 100%;
+        height: 97ch;
+        background: rgba(0, 0, 0, 0.959);
+    }
+}
+
+@media (max-width:951px) {
+  
+    .discografia {
+        width: 100%;
+        height: 125ch;
+        background: rgba(0, 0, 0, 0.959);
+    }
+}
+
+@media (max-width:769px) {
+    .sobre {
+        height: 65ch;
+    }
+
+    .icone {
+        display: flex;
+        padding: 3% 41%;
+    }
+    .texo {
+        position: relative;
+        width: 30ch;
+        top: 4ch;
+        margin-left: 1ch;
+        text-align: center;
+        cursor: pointer;
+        left: 29%;
+    }
+}
+
+@media (max-width:646px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #001;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000px;
+        visibility: hidden;
+        overflow-y: hidden;
+
+    }
+
+    #nav.active #menu {
+
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        z-index: 3;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: rgb(198, 230, 22);
+    }
+
+    #hamburger {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+
+    /* texto e imagem */
+    .sobre {
+        height: 80ch;
+    }
+
+    .texto-img {
+        display: block;
+    }
+
+    .texto-img p {
+        margin-right: 0ch;
+        margin-left: 0.5ch;
+        width: 96%;
+    }
+
+    .texto-img img {
+        position: relative;
+        width: 96%;
+        left: 0.7ch;
+    }
+
+    /*DISCOGRAFIA DE DO SITE */
+    .discografia {
+        height: 250ch;
+    }
+    .texo {
+        position: relative;
+        width: 30ch;
+        top: 4ch;
+        margin-left: 1ch;
+        text-align: center;
+        cursor: pointer;
+        left: 18%;
+    }
+}
+
+@media (max-width:393px) {
+    .icone {
+        display: flex;
+        padding: 3% 35%;
+    }
+    .texo {
+        position: relative;
+        width: 30ch;
+        top: 5ch;
+        margin-left: 1ch;
+        text-align: center;
+        cursor: pointer;
+        left: 11%;
+    }
+   
+}
